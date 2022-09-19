@@ -7,7 +7,7 @@ public class App {
     static List<Curso> cursos = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
-        Professor p1 = new Professor("Sacola_Prime");
+        Professor p1 = new Professor("SacolaPrime");
         List<Integer> opcoes = new ArrayList<>();
         opcoes.add(6);
         opcoes.add(5);
