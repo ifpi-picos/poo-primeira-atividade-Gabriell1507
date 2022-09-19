@@ -8,20 +8,20 @@ public class Curso {
     private Professor professor;
     private List<Aluno> alunos;
 
-    public Curso(String nome, String nivel, int ch, Professor professor) {
-        this.nome = nome;
+    public Curso(String nome8, String nivel, int ch, Professor p) {
+        this.nome = nome8;
         this.nivel = nivel;
         this.ch = ch;
-        this.professor = professor;
+        this.professor = p;
         this.alunos = new ArrayList<>();
+    }
+
+    public int getAlunosMatriculados() {
+        return this.alunos.size();
     }
 
     public void realizarMatricula(Aluno aluno) {
         this.alunos.add(aluno);
-    }
-
-    public int getQuantidadeDeAlunosMatriculados() {
-        return this.alunos.size();
     }
 
     public void setNome(String nome) {
@@ -44,18 +44,16 @@ public class Curso {
         return ch;
     }
 
-    public String getNomeProfessor() {
-        return this.professor.getNome();
-    }
-
     public Professor getProfessor() {
         return professor;
+    }
+
+    public String getNomeProfessor() {
+        return this.professor.getNome();
     }
 
     public List<Aluno> getAlunos() {
         return alunos;
     }
-
-
 
 }
