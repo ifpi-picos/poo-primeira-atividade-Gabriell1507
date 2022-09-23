@@ -7,16 +7,13 @@ public class Aluno {
         this.email = email;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getNome() {
         return nome;
     }
 
-    public String getEmail() {
-        return email;
+    @Override
+    public String toString() {
+        return "Aluno: " + nome ;
     }
 
 }
